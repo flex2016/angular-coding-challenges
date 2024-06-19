@@ -13,7 +13,8 @@ export class TopOfPageComponent {
 
   @HostListener('window:scroll', [])
   onWindowScroll() {
-    this.showButton = window.pageYOffset > 400;
+    const yCoordinate = this.viewportScroller.getScrollPosition()[1];
+    this.showButton = yCoordinate > 400;
   }
 
   public scrollToTop() {
