@@ -1,0 +1,9 @@
+<div class="progress-container">
+  <label for="progress">Progress:</label>
+  <small>{{ value }}</small>
+  <progress [value]="value" [max]="max"></progress>
+</div>
+<div class="button-container">
+  <button (click)="increaseValue()">Increase</button>
+  <button (click)="decreaseValue()">Decrease</button>
+</div>
