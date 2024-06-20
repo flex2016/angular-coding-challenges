@@ -22,6 +22,14 @@
 
     li {
       display: inline;
+      cursor: pointer;
+      &.active {
+        color: #c8c8c8;
+      }
+
+      &:hover {
+        color: #8fbbe6;
+      }
     }
   }
 }

@@ -1,0 +1,31 @@
+<app-card
+  [title]="'Card'"
+  [subTitle]="'Components'"
+  [iconClasses]="'fas fa-info-circle'"
+>
+  <p body>Body Content</p>
+  <p footer>Footer Content</p>
+</app-card>
+<app-card
+  [iconClasses]="'fas fa-info-circle'"
+  [title]="'Accordion'"
+  [subTitle]="'Components'"
+>
+  <app-accordion body [items]="accordionData"></app-accordion>
+</app-card>
+<app-card
+  [iconClasses]="'fas fa-info-circle'"
+  [title]="'Progress Bar'"
+  [subTitle]="'Components'"
+>
+  <app-progress-bar body></app-progress-bar>
+</app-card>
+<app-card
+  [iconClasses]="'fas fa-info-circle'"
+  [title]="'Star Ratings'"
+  [subTitle]="'Components'"
+>
+  <app-star-ratings body [rating]="2.75"></app-star-ratings>
+</app-card>
+<!-- <app-star-ratings [rating]="3.5"></app-star-ratings> -->
+<!-- <app-top-of-page></app-top-of-page> -->

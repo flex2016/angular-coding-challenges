@@ -1,15 +1,20 @@
 <main class="main">
   <app-toolbar [title]="'Angular Coding Challenges'">
     <ul>
-      <li>Home</li>
-      <li>Componenets</li>
+      <li
+        routerLink=""
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: true }"
+      >
+        Components
+      </li>
       <li>Directives</li>
       <li>Services</li>
       <li>Pipes</li>
       <li>Other</li>
     </ul>
   </app-toolbar>
-  <app-card
+  <!-- <app-card
     [title]="'Card'"
     [subTitle]="'Components'"
     [iconClasses]="'fas fa-info-circle'"
@@ -20,7 +25,7 @@
   <app-accordion [items]="accordionData"></app-accordion>
   <app-progress-bar></app-progress-bar>
   <app-star-ratings [rating]="3.5"></app-star-ratings>
-  <app-top-of-page></app-top-of-page>
+  <app-top-of-page></app-top-of-page> -->
 </main>
 
 <router-outlet />
