@@ -8,24 +8,13 @@
       >
         Components
       </li>
-      <li>Directives</li>
-      <li>Services</li>
-      <li>Pipes</li>
-      <li>Other</li>
+      <li routerLink="directives" routerLinkActive="active">Directives</li>
+      <li routerLink="services" routerLinkActive="active">Services</li>
+      <li routerLink="pipes" routerLinkActive="active">Pipes</li>
+      <li routerLink="other" routerLinkActive="active">Other</li>
     </ul>
   </app-toolbar>
-  <!-- <app-card
-    [title]="'Card'"
-    [subTitle]="'Components'"
-    [iconClasses]="'fas fa-info-circle'"
-  >
-    <p body>Body Content</p>
-    <p footer>Footer Content</p>
-  </app-card>
-  <app-accordion [items]="accordionData"></app-accordion>
-  <app-progress-bar></app-progress-bar>
-  <app-star-ratings [rating]="3.5"></app-star-ratings>
-  <app-top-of-page></app-top-of-page> -->
+  <!--<app-top-of-page></app-top-of-page> -->
 </main>
 
 <router-outlet />
