@@ -1,6 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { PipeDocumentationComponent } from './pipe-documentation.component';
+import { TruncatePipe } from '../truncate/truncate.pipe';
 
 describe('PipeDocumentationComponent', () => {
   let component: PipeDocumentationComponent;
@@ -8,10 +9,9 @@ describe('PipeDocumentationComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [PipeDocumentationComponent]
-    })
-    .compileComponents();
-    
+      declarations: [PipeDocumentationComponent, TruncatePipe],
+    }).compileComponents();
+
     fixture = TestBed.createComponent(PipeDocumentationComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

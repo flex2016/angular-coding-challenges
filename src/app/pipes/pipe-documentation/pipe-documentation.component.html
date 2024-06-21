@@ -1,1 +1,14 @@
-<p>pipe-documentation works!</p>
+<p>
+  {{
+    "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, ea, fugit
+     magnam voluptatum odit fugiat cumque cum temporibus repellendus corrupti reprehenderit
+     deserunt consequuntur laudantium libero beatae adipisci suscipit atque commodi."
+      | truncate : 75
+  }}
+</p>
+<p>
+  {{ nullText | truncate : 75 }}
+</p>
+<p>
+  {{ undefinedText | truncate : 75 }}
+</p>
