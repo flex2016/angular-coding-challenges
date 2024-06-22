@@ -15,6 +15,9 @@ export class PipeDocumentationComponent {
   amount: number = 123.45;
   currency: string = 'EUR';
   timeOftransaction: Date = this.getPresentDate();
+  validPerson = { firstName: 'John', lastName: 'Doe' };
+  invalidPerson: string | null = 'invalid';
+  undefinedPerson: { firstName: string; lastName: string } | undefined;
 
   public getPresentDate() {
     return new Date(1997, 6, 1, 12, 32);
