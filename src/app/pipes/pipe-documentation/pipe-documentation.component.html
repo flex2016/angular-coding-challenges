@@ -45,3 +45,15 @@
     {{ undefinedPerson | reverseName : true }}
   </p>
 </app-card>
+<app-card
+  [iconClasses]="'fas fa-info-circle'"
+  [title]="'Dotifier'"
+  [subTitle]="'Pipes'"
+>
+  <p body>
+    {{ shortText }} =>
+    {{ shortText | dotifier }}
+    {{ nullText | dotifier }}
+    {{ undefinedText | dotifier }}
+  </p>
+</app-card>

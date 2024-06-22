@@ -8,6 +8,7 @@ import { Component } from '@angular/core';
 export class PipeDocumentationComponent {
   exampleText: string =
     'This is a long text that needs to be truncated because it exceeds the default maximum length of 100 characters.';
+  shortText: string = 'This is a short text';
   nullText: string | null = null;
   undefinedText: string | undefined = undefined;
 

@@ -6,8 +6,9 @@ import { PIPES_ROUTES } from './pipes.routes';
 import { TruncatePipe } from './truncate/truncate.pipe';
 import { SharedModule } from '../shared/shared.module';
 import { ReverseNamePipe } from './reverse-name/reverse-name.pipe';
+import { DotifierPipe } from './dotifier/dotifier.pipe';
 @NgModule({
-  declarations: [PipeDocumentationComponent, TruncatePipe, ReverseNamePipe],
+  declarations: [PipeDocumentationComponent, TruncatePipe, ReverseNamePipe, DotifierPipe],
   imports: [CommonModule, SharedModule, RouterModule.forChild(PIPES_ROUTES)],
 })
 export class PipesModule {}
