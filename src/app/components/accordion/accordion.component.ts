@@ -12,9 +12,9 @@ interface AccordionItem {
   styleUrl: './accordion.component.scss',
 })
 export class AccordionComponent {
-  @Input() public items: AccordionItem[] = [];
+  @Input() items: AccordionItem[] = [];
 
-  public toggle(item: AccordionItem): void {
+  toggle(item: AccordionItem): void {
     item.isExpanded = !item.isExpanded;
   }
 }

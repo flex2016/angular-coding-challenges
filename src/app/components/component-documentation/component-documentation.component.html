@@ -27,5 +27,12 @@
 >
   <app-star-ratings body [rating]="2.75"></app-star-ratings>
 </app-card>
-<!-- <app-star-ratings [rating]="3.5"></app-star-ratings> -->
+<app-card
+  [iconClasses]="'fas fa-info-circle'"
+  [title]="'Loader'"
+  [subTitle]="'Components'"
+>
+  <app-loader body [isLoading]="false" [loaderType]="loaderType"></app-loader>
+</app-card>
+
 <!-- <app-top-of-page></app-top-of-page> -->

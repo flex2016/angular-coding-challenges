@@ -32,13 +32,13 @@ export class StarRatingsComponent implements OnChanges {
     }
   }
 
-  // public get fullStars(): number[] {
+  //  get fullStars(): number[] {
   //   const totalFullStars = Math.floor(this.rating);
 
   //   return Array(totalFullStars).fill(0);
   // }
 
-  // public get hasHalfStar(): boolean {
+  //  get hasHalfStar(): boolean {
   //   const highestRating = 5;
   //   const hasHalfStar =
   //     this.rating - Math.floor(this.rating) >= 0.5 &&
@@ -47,7 +47,7 @@ export class StarRatingsComponent implements OnChanges {
   //   return hasHalfStar;
   // }
 
-  // public get emptyStars(): number[] {
+  //    get emptyStars(): number[] {
   //   const highestRating = 5;
   //   const totalEmptyStars = Math.floor(highestRating - this.rating);
 

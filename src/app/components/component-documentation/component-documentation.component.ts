@@ -1,5 +1,10 @@
 import { Component } from '@angular/core';
 
+enum LoaderType {
+  Circular = 'Circular',
+  Loading = 'Loading',
+}
+
 @Component({
   selector: 'app-component-documentation',
   templateUrl: './component-documentation.component.html',
@@ -11,4 +16,5 @@ export class ComponentDocumentationComponent {
     { title: 'Panel 2', content: 'Content for panel 2', isExpanded: false },
     { title: 'Panel 3', content: 'Content for panel 3', isExpanded: false },
   ];
+  loaderType = LoaderType.Loading;
 }

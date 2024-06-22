@@ -17,7 +17,7 @@ export class TopOfPageComponent {
     this.showButton = yCoordinate > 400;
   }
 
-  public scrollToTop() {
+  scrollToTop() {
     this.viewportScroller.scrollToPosition([0, 0]);
   }
 }

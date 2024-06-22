@@ -6,8 +6,8 @@ import { Component, Input } from '@angular/core';
   styleUrl: './progress-bar.component.scss',
 })
 export class ProgressBarComponent {
-  @Input() public value: number = 50;
-  @Input() public max: number = 100;
+  @Input() value: number = 50;
+  @Input() max: number = 100;
 
   increaseValue() {
     if (this.value < 100) {
