@@ -8,7 +8,7 @@ import { AccordionComponent } from './accordion/accordion.component';
 import { ProgressBarComponent } from './progress-bar/progress-bar.component';
 import { StarRatingsComponent } from './star-ratings/star-ratings.component';
 import { COMPONENTS_ROUTES } from './components.routes';
-import { CardComponent } from './card/card.component';
+import { SharedModule } from '../shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -16,10 +16,10 @@ import { CardComponent } from './card/card.component';
     AccordionComponent,
     ProgressBarComponent,
     StarRatingsComponent,
-    CardComponent,
   ],
   imports: [
     CommonModule,
+    SharedModule,
     FormsModule,
     ReactiveFormsModule,
     RouterModule.forChild(COMPONENTS_ROUTES),
