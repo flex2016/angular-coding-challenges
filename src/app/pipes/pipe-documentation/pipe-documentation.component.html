@@ -20,3 +20,24 @@
     {{ null | truncate : 75 }}
   </p>
 </app-card>
+<app-card
+  [iconClasses]="'fas fa-info-circle'"
+  [title]="'Prebuilt percent and currency'"
+  [subTitle]="'Pipes'"
+>
+  <p body>{{ fee }} => {{ fee | percent : "2.2-3" }}</p>
+  <p footer>
+    {{ currency }} {{ amount }} =>
+    {{ amount | currency : currency : "symbol" : "9.2-2" }}
+  </p>
+</app-card>
+<app-card
+  [iconClasses]="'fas fa-info-circle'"
+  [title]="'Prebuilt date'"
+  [subTitle]="'Pipes'"
+>
+  <p body>
+    {{ timeOftransaction }} =>
+    {{ timeOftransaction | date : "ww:yyyy-MMMM dd HH:mm:ss" }}
+  </p>
+</app-card>
