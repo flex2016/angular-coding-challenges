@@ -34,5 +34,22 @@
 >
   <app-loader body [isLoading]="false" [loaderType]="loaderType"></app-loader>
 </app-card>
+<app-card
+  [iconClasses]="'fas fa-info-circle'"
+  [title]="'Credit Card Input'"
+  [subTitle]="'Components'"
+>
+  <div body>
+    <app-credit-card-input
+      [creditCardNumber]="'4321432143214321'"
+      [isReadonly]="false"
+    ></app-credit-card-input>
+    <br />
+    <app-credit-card-input
+      [creditCardNumber]="'4321432143214321'"
+      [isReadonly]="true"
+    ></app-credit-card-input>
+  </div>
+</app-card>
 
 <!-- <app-top-of-page></app-top-of-page> -->

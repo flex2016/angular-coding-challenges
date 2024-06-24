@@ -10,6 +10,7 @@ import { StarRatingsComponent } from './star-ratings/star-ratings.component';
 import { COMPONENTS_ROUTES } from './components.routes';
 import { SharedModule } from '../shared/shared.module';
 import { LoaderComponent } from './loader/loader.component';
+import { CreditCardInputComponent } from './credit-card-input/credit-card-input.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { LoaderComponent } from './loader/loader.component';
     ProgressBarComponent,
     StarRatingsComponent,
     LoaderComponent,
+    CreditCardInputComponent,
   ],
   imports: [
     CommonModule,
