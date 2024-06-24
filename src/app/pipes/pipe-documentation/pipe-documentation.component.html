@@ -57,3 +57,17 @@
     {{ undefinedText | dotifier }}
   </p>
 </app-card>
+<app-card
+  [iconClasses]="'fas fa-info-circle'"
+  [title]="'Credit Card Formatter'"
+  [subTitle]="'Pipes'"
+>
+  <div body>
+    <p>
+      {{ creditCardNumber }} => {{ creditCardNumber | creditCardFormatter }}
+    </p>
+    <p>{{ invalidCreditCardLength | creditCardFormatter }}</p>
+    <p>{{ nullCreditCardNumber | creditCardFormatter }}</p>
+    <p>{{ invalidCreditCardNumber | creditCardFormatter }}</p>
+  </div>
+</app-card>

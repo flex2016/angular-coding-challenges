@@ -20,6 +20,11 @@ export class PipeDocumentationComponent {
   invalidPerson: string | null = 'invalid';
   undefinedPerson: { firstName: string; lastName: string } | undefined;
 
+  creditCardNumber = '1111222233334444';
+  invalidCreditCardNumber = '11112222abc34444';
+  invalidCreditCardLength = '"111111111111111111111111111111"';
+  nullCreditCardNumber = null;
+
   public getPresentDate() {
     return new Date(1997, 6, 1, 12, 32);
   }
