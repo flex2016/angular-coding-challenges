@@ -1,10 +1,15 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { TitleService } from './services/title/title.service';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })
-export class AppComponent {
-  title = 'angular-coding-challenges';
+export class AppComponent implements OnInit {
+  constructor(public titleService: TitleService) {}
+
+  public ngOnInit() {
+    this.titleService.initializeTitleService();
+  }
 }
