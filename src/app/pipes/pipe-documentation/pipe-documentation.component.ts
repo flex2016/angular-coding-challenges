@@ -25,7 +25,17 @@ export class PipeDocumentationComponent {
   invalidCreditCardLength = '"111111111111111111111111111111"';
   nullCreditCardNumber = null;
 
-  public getPresentDate() {
+  flattenData: any[] = [1, 2, [3], [4, [5, 6, [7]]]];
+
+  modifyFlatten(): void {
+    this.flattenData.push(3, 5);
+  }
+
+  reassignFlatten(): void {
+    this.flattenData = [...this.flattenData];
+  }
+
+  getPresentDate() {
     return new Date(1997, 6, 1, 12, 32);
   }
 }

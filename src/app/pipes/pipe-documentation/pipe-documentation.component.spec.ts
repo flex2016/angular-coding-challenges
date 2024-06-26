@@ -5,6 +5,7 @@ import { TruncatePipe } from '../truncate/truncate.pipe';
 import { ReverseNamePipe } from '../reverse-name/reverse-name.pipe';
 import { DotifierPipe } from '../dotifier/dotifier.pipe';
 import { CreditCardFormatterPipe } from '../credit-card-formatter/credit-card-formatter.pipe';
+import { FlattenPipe } from '../flatten/flatten.pipe';
 
 describe('PipeDocumentationComponent', () => {
   let component: PipeDocumentationComponent;
@@ -18,6 +19,7 @@ describe('PipeDocumentationComponent', () => {
         ReverseNamePipe,
         DotifierPipe,
         CreditCardFormatterPipe,
+        FlattenPipe,
       ],
     }).compileComponents();
 
@@ -28,5 +30,21 @@ describe('PipeDocumentationComponent', () => {
 
   it('should create', () => {
     expect(component).toBeTruthy();
+  });
+
+  it('should initialize flattenData correctly', () => {
+    expect(component.flattenData).toEqual([1, 2, [3], [4, [5, 6, [7]]]]);
+  });
+
+  it('should modify flattenData correctly when modifyFlatten is called', () => {
+    component.modifyFlatten();
+    expect(component.flattenData).toEqual([1, 2, [3], [4, [5, 6, [7]]], 3, 5]);
+  });
+
+  it('should reassign flattenData correctly when reassignFlatten is called', () => {
+    const originalArray = component.flattenData;
+    component.reassignFlatten();
+    expect(component.flattenData).not.toBe(originalArray); // New reference
+    expect(component.flattenData).toEqual([1, 2, [3], [4, [5, 6, [7]]]]);
   });
 });

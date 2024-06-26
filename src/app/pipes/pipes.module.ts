@@ -8,8 +8,9 @@ import { SharedModule } from '../shared/shared.module';
 import { ReverseNamePipe } from './reverse-name/reverse-name.pipe';
 import { DotifierPipe } from './dotifier/dotifier.pipe';
 import { CreditCardFormatterPipe } from './credit-card-formatter/credit-card-formatter.pipe';
+import { FlattenPipe } from './flatten/flatten.pipe';
 @NgModule({
-  declarations: [PipeDocumentationComponent, TruncatePipe, ReverseNamePipe, DotifierPipe, CreditCardFormatterPipe],
+  declarations: [PipeDocumentationComponent, TruncatePipe, ReverseNamePipe, DotifierPipe, CreditCardFormatterPipe, FlattenPipe],
   imports: [CommonModule, SharedModule, RouterModule.forChild(PIPES_ROUTES)],
 })
 export class PipesModule {}

@@ -8,10 +8,9 @@ describe('LinkedinPostComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [LinkedinPostComponent]
-    })
-    .compileComponents();
-    
+      declarations: [LinkedinPostComponent],
+    }).compileComponents();
+
     fixture = TestBed.createComponent(LinkedinPostComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
