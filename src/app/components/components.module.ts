@@ -15,6 +15,7 @@ import { TwitterPostComponent } from './twitter-post/twitter-post.component';
 import { LinkedinPostComponent } from './linkedin-post/linkedin-post.component';
 import { ModalComponent } from './modal/modal.component';
 import { DebounceSearchComponent } from './debounce-search/debounce-search.component';
+import { QuoteComponent } from './quote/quote.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { DebounceSearchComponent } from './debounce-search/debounce-search.compo
     LinkedinPostComponent,
     ModalComponent,
     DebounceSearchComponent,
+    QuoteComponent,
   ],
   imports: [
     CommonModule,

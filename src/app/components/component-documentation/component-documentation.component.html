@@ -92,4 +92,18 @@
     (searchUpdate)="debounceExampleMethod($event)"
   ></app-debounce-search>
 </app-card>
+
+<app-card
+  [iconClasses]="'fas fa-info-circle'"
+  [title]="'Quote'"
+  [subTitle]="'Components'"
+>
+  <app-quote
+    body
+    [quote]="'Get Good. Get Great. Get Better.'"
+    [author]="'John Doe'"
+    [occupation]="'Software Engineer, Mentor'"
+  >
+  </app-quote>
+</app-card>
 <!-- <app-top-of-page></app-top-of-page> -->
