@@ -81,4 +81,15 @@
     <button (click)="modal.open()">Call Modal</button>
   </div>
 </app-card>
+
+<app-card
+  [iconClasses]="'fas fa-info-circle'"
+  [title]="'Debounce Search'"
+  [subTitle]="'Components'"
+>
+  <app-debounce-search
+    body
+    (searchUpdate)="debounceExampleMethod($event)"
+  ></app-debounce-search>
+</app-card>
 <!-- <app-top-of-page></app-top-of-page> -->

@@ -14,6 +14,7 @@ import { CreditCardInputComponent } from './credit-card-input/credit-card-input.
 import { TwitterPostComponent } from './twitter-post/twitter-post.component';
 import { LinkedinPostComponent } from './linkedin-post/linkedin-post.component';
 import { ModalComponent } from './modal/modal.component';
+import { DebounceSearchComponent } from './debounce-search/debounce-search.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { ModalComponent } from './modal/modal.component';
     TwitterPostComponent,
     LinkedinPostComponent,
     ModalComponent,
+    DebounceSearchComponent,
   ],
   imports: [
     CommonModule,

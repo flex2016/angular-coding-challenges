@@ -17,4 +17,8 @@ export class ComponentDocumentationComponent {
     { title: 'Panel 3', content: 'Content for panel 3', isExpanded: false },
   ];
   loaderType = LoaderType.Loading;
+
+  debounceExampleMethod(value: string): void {
+    console.log('Component Documentation', value);
+  }
 }
