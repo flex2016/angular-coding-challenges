@@ -86,3 +86,14 @@
     <button (click)="reassignFlatten()">Reassign</button>
   </div>
 </app-card>
+
+<app-card
+  [iconClasses]="'fas fa-info-circle'"
+  [title]="'Filter Term'"
+  [subTitle]="'Pipes'"
+>
+  <div body>
+    {{ ["Hello", "World", "Hello World"] | json }} Term = "World" =>
+    {{ ["Hello", "World", "Hello World"] | filterTerm : "World" }}
+  </div>
+</app-card>
