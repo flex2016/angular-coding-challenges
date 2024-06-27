@@ -18,6 +18,8 @@ export class ComponentDocumentationComponent {
   ];
   loaderType = LoaderType.Loading;
 
+  toggleValue = false;
+
   debounceExampleMethod(value: string): void {
     console.log('Component Documentation', value);
   }
