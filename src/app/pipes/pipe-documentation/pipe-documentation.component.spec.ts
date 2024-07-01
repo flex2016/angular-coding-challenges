@@ -7,6 +7,8 @@ import { DotifierPipe } from '../dotifier/dotifier.pipe';
 import { CreditCardFormatterPipe } from '../credit-card-formatter/credit-card-formatter.pipe';
 import { FlattenPipe } from '../flatten/flatten.pipe';
 import { FilterTermPipe } from '../filter-term/filter-term.pipe';
+import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { CardComponent } from '../../components/card/card.component';
 
 describe('PipeDocumentationComponent', () => {
   let component: PipeDocumentationComponent;
@@ -22,7 +24,9 @@ describe('PipeDocumentationComponent', () => {
         CreditCardFormatterPipe,
         FlattenPipe,
         FilterTermPipe,
+        CardComponent,
       ],
+      schemas: [CUSTOM_ELEMENTS_SCHEMA],
     }).compileComponents();
 
     fixture = TestBed.createComponent(PipeDocumentationComponent);

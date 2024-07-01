@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { PipeDocumentationComponent } from './pipe-documentation/pipe-documentation.component';
 import { RouterModule } from '@angular/router';
@@ -9,9 +9,17 @@ import { ReverseNamePipe } from './reverse-name/reverse-name.pipe';
 import { DotifierPipe } from './dotifier/dotifier.pipe';
 import { CreditCardFormatterPipe } from './credit-card-formatter/credit-card-formatter.pipe';
 import { FlattenPipe } from './flatten/flatten.pipe';
-import { FilterTermPipe } from './filter-term/filter-term.pipe';
+
 @NgModule({
-  declarations: [PipeDocumentationComponent, TruncatePipe, ReverseNamePipe, DotifierPipe, CreditCardFormatterPipe, FlattenPipe, FilterTermPipe],
+  declarations: [
+    PipeDocumentationComponent,
+    TruncatePipe,
+    ReverseNamePipe,
+    DotifierPipe,
+    CreditCardFormatterPipe,
+    FlattenPipe,
+  ],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
   imports: [CommonModule, SharedModule, RouterModule.forChild(PIPES_ROUTES)],
 })
 export class PipesModule {}

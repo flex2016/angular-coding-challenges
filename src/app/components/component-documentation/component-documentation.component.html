@@ -84,17 +84,6 @@
 
 <app-card
   [iconClasses]="'fas fa-info-circle'"
-  [title]="'Debounce Search'"
-  [subTitle]="'Components'"
->
-  <app-debounce-search
-    body
-    (searchUpdate)="debounceExampleMethod($event)"
-  ></app-debounce-search>
-</app-card>
-
-<app-card
-  [iconClasses]="'fas fa-info-circle'"
   [title]="'Quote'"
   [subTitle]="'Components'"
 >
@@ -140,4 +129,26 @@
     </div>
   </div>
 </app-card>
+<app-card
+  [iconClasses]="'fas fa-info-circle'"
+  [title]="'Search List'"
+  [subTitle]="'Components'"
+>
+  <app-search-list
+    body
+    [items]="['United States', 'Mexico', 'United Arab Emirates']"
+  ></app-search-list>
+</app-card>
+
+<app-card
+  [iconClasses]="'fas fa-info-circle'"
+  [title]="'Debounce Search'"
+  [subTitle]="'Components'"
+>
+  <app-debounce-search
+    body
+    (searchUpdate)="debounceExampleMethod($event)"
+  ></app-debounce-search>
+</app-card>
+
 <!-- <app-top-of-page></app-top-of-page> -->

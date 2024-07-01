@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
@@ -18,6 +18,7 @@ import { DebounceSearchComponent } from './debounce-search/debounce-search.compo
 import { QuoteComponent } from './quote/quote.component';
 import { ToggleComponent } from './toggle/toggle.component';
 import { RichTextViewerComponent } from './rich-text-viewer/rich-text-viewer.component';
+import { SearchListComponent } from './search-list/search-list.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,9 @@ import { RichTextViewerComponent } from './rich-text-viewer/rich-text-viewer.com
     QuoteComponent,
     ToggleComponent,
     RichTextViewerComponent,
+    SearchListComponent,
   ],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
   imports: [
     CommonModule,
     SharedModule,

@@ -5,12 +5,13 @@ import { OtherDocumentationComponent } from './other-documentation/other-documen
 import { OTHER_ROUTES } from './other.routes';
 
 import { ReactiveFormsModule } from '@angular/forms';
+import { SharedModule } from '../shared/shared.module';
 
 @NgModule({
   declarations: [OtherDocumentationComponent],
   imports: [
     CommonModule,
-
+    SharedModule,
     ReactiveFormsModule,
     RouterModule.forChild(OTHER_ROUTES),
   ],
