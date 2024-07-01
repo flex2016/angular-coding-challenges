@@ -19,6 +19,7 @@ import { QuoteComponent } from './quote/quote.component';
 import { ToggleComponent } from './toggle/toggle.component';
 import { RichTextViewerComponent } from './rich-text-viewer/rich-text-viewer.component';
 import { SearchListComponent } from './search-list/search-list.component';
+import { CounterComponent } from './counter/counter.component';
 
 @NgModule({
   declarations: [
@@ -36,6 +37,7 @@ import { SearchListComponent } from './search-list/search-list.component';
     ToggleComponent,
     RichTextViewerComponent,
     SearchListComponent,
+    CounterComponent,
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   imports: [
