@@ -21,6 +21,7 @@ import { RichTextViewerComponent } from './rich-text-viewer/rich-text-viewer.com
 import { SearchListComponent } from './search-list/search-list.component';
 import { CounterComponent } from './counter/counter.component';
 import { SimpleTableComponent } from './simple-table/simple-table.component';
+import { PagingComponent } from './paging/paging.component';
 
 @NgModule({
   declarations: [
@@ -40,6 +41,7 @@ import { SimpleTableComponent } from './simple-table/simple-table.component';
     SearchListComponent,
     CounterComponent,
     SimpleTableComponent,
+    PagingComponent,
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   imports: [
